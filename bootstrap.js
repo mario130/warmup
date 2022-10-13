@@ -29,7 +29,6 @@ module.exports = () => {
 				key: 'company',
 			},
 			manager: "Steve Lew",
-			start_date: new Date(),
 			department: "Engineering"
 		}).catch(errorHandler);
 	}).catch(errorHandler);

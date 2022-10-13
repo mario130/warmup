@@ -20,6 +20,7 @@ module.exports = sequelizeConnection.define("projects", {
 	},
 	start_date: {
 		type: DataTypes.DATEONLY,
+		defaultValue: new Date()
 	},
 	department: {
 		type: DataTypes.STRING,
