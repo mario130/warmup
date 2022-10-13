@@ -1,5 +1,6 @@
 const express = require('express');
 const projectsRouter = require('./api/routes/projects')
+const companyRouter = require('./api/routes/company')
 
 require("./config/database/bootstrap")()
 
@@ -14,6 +15,7 @@ app.get('/', (req, res) => {
 
 // routers
 app.use('/api/projects', projectsRouter)
+app.use('/api/companies', companyRouter)
 
 const PORT = 8081
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`))
