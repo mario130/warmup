@@ -1,5 +1,5 @@
 const { Sequelize, DataTypes } = require("sequelize");
-const sequelizeConnection = require("../src/database/connection")
+const sequelizeConnection = require("../config/database/connection")
 
 module.exports = sequelizeConnection.define("projects", {
 	id: {

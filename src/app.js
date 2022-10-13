@@ -1,8 +1,7 @@
 const express = require('express');
-const cors = require('cors');
-const projectsRouter = require('./router/projects.router')
+const projectsRouter = require('./api/routes/projects')
 
-require("./bootstrap")()
+require("./config/database/bootstrap")()
 
 const app = express()
 

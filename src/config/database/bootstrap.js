@@ -1,9 +1,9 @@
-const sequelizeConnection = require("./src/database/connection")
+const sequelizeConnection = require("./connection")
 
 module.exports = () => {
 
-	const Company = require('./models/Company')
-	const Project = require('./models/Project')
+	const Company = require('../../models/Company')
+	const Project = require('../../models/Project')
 
 	const errorHandler = error => console.error("Error: ", error)
 
